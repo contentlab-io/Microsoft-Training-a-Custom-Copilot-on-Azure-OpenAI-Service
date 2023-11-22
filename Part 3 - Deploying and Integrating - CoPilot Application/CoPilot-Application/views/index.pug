@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	.chat(id='chat')
+		.messages(id='messages')
+		
+
+		.inputmessage(id='inputmessage')
+			input.input(autofocus='' placeholder='Send Message to Chatbot' id='sendmessage')

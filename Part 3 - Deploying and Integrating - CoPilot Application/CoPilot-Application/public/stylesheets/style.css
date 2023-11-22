@@ -1,0 +1,65 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #a0fa7a;
+    height: 100%;
+    margin: 20px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 300pt;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+
+input {
+    border: 0;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+
+.response {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.bot {
+    margin-right: auto;
+    text-align: left;
+    background-color: #5accf8;
+    font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco, monospace;
+}
+
+.user {
+    margin-left: auto;
+    text-align: right;
+    background-color: #c1bbbb;
+}

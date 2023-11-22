@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: copilot-app
+  labels:
+    app: copilot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: copilot-app
+  template:
+    metadata:
+      labels:
+        app: copilot-app
+    spec:
+      containers:
+      - name: copilot-app
+        image: oaicopilot.azurecr.io/copilotapp
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred 
